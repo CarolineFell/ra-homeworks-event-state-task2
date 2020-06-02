@@ -8,11 +8,11 @@ branches:
 cache: node_modules
 # установка зависимостей
 install:
-  - yarn install
+  - yarn
 build: off
 # сборка
 build_script:
-  - yarn run build
+  - yarn build
 # скрипт тестирования
 # test_script:
 #   - yarn run lint && yarn run test
