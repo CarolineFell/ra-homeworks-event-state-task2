@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin-left: 400px;
+  margin-right: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.switch-view {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: flex-end;
+  color: gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.switch-view .material-icons {
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.switch-view .material-icons:hover {
+  color: black;
+}
+
+.cards-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards-view .item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.04), 0 10px 10px 0 rgba(27, 27, 27, 0.25);
+  margin-bottom: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.cards-view .item:nth-child(n+2) {
+  margin-left: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards-view .item:nth-child(4n+4) {
+  margin-left: 0;
+}
+
+.cards-view .name {
+  text-transform: uppercase;
+}
+
+.cards-view .color {
+  font-size: 16px;
+}
+
+.cards-view img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.cards-view .item-bottom {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: #ee2004e3;
+}
+
+.cards-view .price, .list-view .price {
+  font-size: 18px;
+}
+
+.cards-view .button, .list-view .button {
+  font-size: 14px;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cards-view .button:hover {
+  color: #37c200ec;
+}
+
+.list-view .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.list-view .name {
+  text-transform: uppercase;
+}
+
+.list-view .color {
+  font-size: 16px;
+}
+
+.list-view .item:nth-child(n+2) {
+  margin-top: 10px;
+ }
+
+.list-view img {
+  height: 100px;
+}
+
+.list-view .item .price {
+  font-size: 18px;
+}
+
+.list-view .price, .list-view .button {
+  color: #ff0000;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.list-view .button:hover {
+  color: #37c200ec;
 }
