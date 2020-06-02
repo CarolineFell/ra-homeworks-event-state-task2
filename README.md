@@ -1,5 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/rjkl4ad18t171xaf/branch/master?svg=true)](https://ci.appveyor.com/project/CarolineFell/ra-homeworks-events-state-task2/branch/master)
 
+https://carolinefell.github.io/ra-homeworks-events-state-task2/
 
 ------
 
